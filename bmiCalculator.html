@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bmiCalc.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrapper">
+    <h1>BMI CALCULATOR</h1>
+    <label>Metric
+        <input type="radio" checked = 'checked' name="radio" id="metric">
+    </label>
+    <label>English
+        <input type="radio" name="radio" id="english" >
+    </label>
+    <div class="input-data">
+        <input name="height" type="text" required id="height">
+        <p class="cm" id="cm">CM</p>
+        <label for="height">Height</label>
+        <div class="underline"></div>
+    </div>
+    <div class="input-data">
+        <input name="weight" id="weight" type="text" required>
+        <label for="weight">Weight</label>
+        <p class="kg" id="kg">KG</p>
+        <div class="underline"></div>
+    </div>
+    <p id="bmiResult"></p>
+    <button id="submit">Submit</button>
+</div>
+<script src="bmiCalc.js"></script>
+</body>
+</html>
